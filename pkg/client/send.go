@@ -5,8 +5,9 @@ import (
 	"encoding/binary"
 	"fmt"
 	"net"
-	"protocol/pkg/request"
-	"protocol/pkg/response"
+
+	"github.com/KronusRodion/protocol/pkg/request"
+	"github.com/KronusRodion/protocol/pkg/response"
 )
 
 func (c *Client) Send(key, value []byte) error {

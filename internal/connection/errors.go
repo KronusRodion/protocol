@@ -3,7 +3,8 @@ package connection
 import (
 	"encoding/binary"
 	"io"
-	"protocol/pkg/response"
+
+	"github.com/KronusRodion/protocol/pkg/response"
 )
 
 func WriteError(w io.Writer, msg string, status response.Response) error {

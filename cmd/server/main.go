@@ -4,7 +4,8 @@ import (
 	"context"
 	"log"
 	"os/signal"
-	"protocol/internal/server"
+
+	"github.com/KronusRodion/protocol/internal/server"
 )
 
 const (
