@@ -11,7 +11,15 @@ go run cmd/server.main.go
 For using Get and Send methods import pkg part of project and use Client:
 
 ```bash
-client, err := NewClient(port)
+go get github.com/KronusRodion/protocol
+```
+
+```bash
+
+import "github.com/KronusRodion/protocol/pkg/client"
+
+func main() {
+	client, err := client.NewClient(port)
 	if err != nil {
 		t.Fatalf("Failed to create client: %v", err)
 	}
@@ -29,6 +37,8 @@ client, err := NewClient(port)
 	if err != nil {
 		t.Errorf("Get failed: %v", err)
 	}
+}
+
 ```
 
 # Tests
